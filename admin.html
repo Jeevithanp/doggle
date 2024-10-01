@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin Dashboard - Real-Time Polling">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js library -->
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <form id="adminLoginForm">
+            <label for="password">Admin Password:</label>
+            <input type="password" id="password" name="password">
+            <button type="button" onclick="adminLogin()">Login</button>
+        </form>
+
+        <div id="adminContent" style="display:none;">
+            <h2>Voting Results</h2>
+            <canvas id="resultsChart" width="400" height="200"></canvas> <!-- Chart canvas -->
+            
+            <h2>Voter Details</h2>
+            <div id="voterDetails">
+                <!-- Voter details will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>
